@@ -1,0 +1,181 @@
+/* Modern Dark Theme */
+body {
+  background: linear-gradient(135deg, #121212, #1f1f2e);
+  font-family: "Poppins", sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.robot-icon {
+  margin-right: 12px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Glassmorphism Container */
+.container {
+  max-width: 480px;
+  width: 90%;
+  padding: 30px;
+  background: rgba(40, 40, 58, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  box-shadow: 0px 6px 14px rgba(0, 255, 136, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Input Fields */
+.input-container {
+  display: flex;
+  align-items: center;
+  background: rgba(44, 44, 62, 0.9);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 136, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container:hover {
+  background: rgba(55, 55, 75, 1);
+}
+
+.input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e0e0e0;
+  padding-left: 12px;
+  font-size: 16px;
+}
+
+.input-container svg {
+  color: #00ff88;
+  font-size: 1.4rem;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Neon Green Primary Button */
+.btn-primary {
+  background: linear-gradient(90deg, #00ff88, #00cc77);
+  color: black;
+  box-shadow: 0px 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00cc77, #009955);
+  box-shadow: 0px 5px 15px rgba(0, 255, 136, 0.5);
+}
+
+/* Gradient Pink Success Button */
+.btn-success {
+  background: linear-gradient(90deg, #ff7eb3, #ff3d87);
+  color: white;
+  box-shadow: 0px 4px 12px rgba(255, 126, 179, 0.3);
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #ff3d87, #ff1e70);
+  box-shadow: 0px 5px 15px rgba(255, 126, 179, 0.5);
+}
+
+/* Google Login Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.google-btn:hover {
+  background: #f8f9fa;
+  color: #444;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+/* List Items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ddd;
+  font-weight: 500;
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(41, 41, 61, 0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background: rgba(58, 58, 82, 1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .google-icon {
+    font-size: 1.4rem;
+  }
+}
